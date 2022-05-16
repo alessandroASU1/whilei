@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Kontrollstrukturen</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <script>
+			"use strict";
+
+		
+	function clicked() {			
+	var i=1
+	var vAnzahl= document.getElementById("idZahl").value;
+	var vAusgabe = "";
+	var Q		 
+
+	while ( i < vAnzahl ) {
+	Q= i*i
+	vAusgabe= vAusgabe + "<br>" + "die Zahl: " + i + " zum quadrat ist:" + Q ;
+	i= i+1;
+	}
+	document.getElementById("idOutput").innerHTML = vAusgabe;
+	}
+	</script>
+
+	</head>
+
+	<body>
+
+		<h1>Kontrollstrukturen</h1>
+		Eingabe: <input id="idZahl" type="text" value="10">
+		<button onClick="clicked();">Berechne die zahlen</button>
+		<div id="idOutput">Hier kommen die Zahlen</div>
+	</body>
+
+</html>
